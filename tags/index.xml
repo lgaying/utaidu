@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 一个有态度的Blog</title>
+    <link>https://lgaying.github.io/utaidu/tags/</link>
+    <description>Recent content in Tags on 一个有态度的Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 12 Mar 2019 22:45:59 +0800</lastBuildDate>
+    
+	<atom:link href="https://lgaying.github.io/utaidu/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Book</title>
+      <link>https://lgaying.github.io/utaidu/tags/book/</link>
+      <pubDate>Tue, 12 Mar 2019 22:45:59 +0800</pubDate>
+      
+      <guid>https://lgaying.github.io/utaidu/tags/book/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://lgaying.github.io/utaidu/tags/python/</link>
+      <pubDate>Tue, 05 Mar 2019 19:27:59 +0800</pubDate>
+      
+      <guid>https://lgaying.github.io/utaidu/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Random</title>
+      <link>https://lgaying.github.io/utaidu/tags/random/</link>
+      <pubDate>Tue, 05 Mar 2019 19:27:59 +0800</pubDate>
+      
+      <guid>https://lgaying.github.io/utaidu/tags/random/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>String</title>
+      <link>https://lgaying.github.io/utaidu/tags/string/</link>
+      <pubDate>Wed, 06 Mar 2019 20:08:25 +0800</pubDate>
+      
+      <guid>https://lgaying.github.io/utaidu/tags/string/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>富爸爸穷爸爸</title>
+      <link>https://lgaying.github.io/utaidu/tags/%E5%AF%8C%E7%88%B8%E7%88%B8%E7%A9%B7%E7%88%B8%E7%88%B8/</link>
+      <pubDate>Tue, 12 Mar 2019 22:45:59 +0800</pubDate>
+      
+      <guid>https://lgaying.github.io/utaidu/tags/%E5%AF%8C%E7%88%B8%E7%88%B8%E7%A9%B7%E7%88%B8%E7%88%B8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>微习惯</title>
+      <link>https://lgaying.github.io/utaidu/tags/%E5%BE%AE%E4%B9%A0%E6%83%AF/</link>
+      <pubDate>Mon, 11 Mar 2019 18:51:38 +0800</pubDate>
+      
+      <guid>https://lgaying.github.io/utaidu/tags/%E5%BE%AE%E4%B9%A0%E6%83%AF/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>挑战一个俯卧撑</title>
+      <link>https://lgaying.github.io/utaidu/tags/%E6%8C%91%E6%88%98%E4%B8%80%E4%B8%AA%E4%BF%AF%E5%8D%A7%E6%92%91/</link>
+      <pubDate>Fri, 08 Mar 2019 16:27:59 +0800</pubDate>
+      
+      <guid>https://lgaying.github.io/utaidu/tags/%E6%8C%91%E6%88%98%E4%B8%80%E4%B8%AA%E4%BF%AF%E5%8D%A7%E6%92%91/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
