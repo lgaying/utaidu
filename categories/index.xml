@@ -11,11 +11,29 @@
     
     
     <item>
+      <title>Category</title>
+      <link>https://lgaying.github.io/utaidu/categories/category/</link>
+      <pubDate>Wed, 13 Mar 2019 19:18:56 +0800</pubDate>
+      
+      <guid>https://lgaying.github.io/utaidu/categories/category/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Python学习笔记</title>
       <link>https://lgaying.github.io/utaidu/categories/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Wed, 06 Mar 2019 20:08:25 +0800</pubDate>
       
       <guid>https://lgaying.github.io/utaidu/categories/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Subcategory</title>
+      <link>https://lgaying.github.io/utaidu/categories/subcategory/</link>
+      <pubDate>Wed, 13 Mar 2019 19:18:56 +0800</pubDate>
+      
+      <guid>https://lgaying.github.io/utaidu/categories/subcategory/</guid>
       <description></description>
     </item>
     
