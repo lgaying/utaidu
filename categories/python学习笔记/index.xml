@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python学习笔记 on 一个有态度的Blog</title>
+    <link>https://lgaying.github.io/utaidu/categories/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+    <description>Recent content in Python学习笔记 on 一个有态度的Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 06 Mar 2019 20:08:25 +0800</lastBuildDate>
+    
+	<atom:link href="https://lgaying.github.io/utaidu/categories/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python3_string模块的方法详解</title>
+      <link>https://lgaying.github.io/utaidu/2019/03/python3_string%E6%A8%A1%E5%9D%97%E7%9A%84%E6%96%B9%E6%B3%95%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Wed, 06 Mar 2019 20:08:25 +0800</pubDate>
+      
+      <guid>https://lgaying.github.io/utaidu/2019/03/python3_string%E6%A8%A1%E5%9D%97%E7%9A%84%E6%96%B9%E6%B3%95%E8%AF%A6%E8%A7%A3/</guid>
+      <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;string()&lt;/strong&gt; &lt;strong&gt;模块主要用于对字符串进行操作。&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;实例&#34;&gt;实例&lt;/h2&gt;
+
+&lt;p&gt;以下展示了使用 string() 方法的实例：&lt;/p&gt;
+
+&lt;p&gt;str.&lt;strong&gt;capitalize()　&amp;ndash;&amp;gt; String　　　返回字符串，其首字母大写，其余部分小写&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;1&amp;gt;&amp;gt;&amp;gt; str = &amp;quot;TEST&amp;quot;
+2&amp;gt;&amp;gt;&amp;gt; str1= &amp;quot;test&amp;quot;
+3&amp;gt;&amp;gt;&amp;gt; print(str + &amp;quot;--&amp;gt;&amp;quot; + str.capitalize() +&#39;\n&#39; + &amp;quot;--&amp;gt;&amp;quot; + str + str1.capitalize()) 
+4 TEST--&amp;gt;Test
+5 TEST--&amp;gt;Test
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python3_random模块的方法详解</title>
+      <link>https://lgaying.github.io/utaidu/2019/03/python3_random%E6%A8%A1%E5%9D%97%E7%9A%84%E6%96%B9%E6%B3%95%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Tue, 05 Mar 2019 19:27:59 +0800</pubDate>
+      
+      <guid>https://lgaying.github.io/utaidu/2019/03/python3_random%E6%A8%A1%E5%9D%97%E7%9A%84%E6%96%B9%E6%B3%95%E8%AF%A6%E8%A7%A3/</guid>
+      <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;random()&lt;/strong&gt; 方法返回随机生成的一个实数，它在(0,1)范围内。&lt;/p&gt;
+
+&lt;h2 id=&#34;语法&#34;&gt;语法&lt;/h2&gt;
+
+&lt;p&gt;以下是 random() 方法的语法:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import random
+
+random.random()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;random()是不能直接访问的，需要导入 random 模块，然后通过 random 静态对象调用该方法。&lt;/p&gt;
+
+&lt;hr /&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python查找文件中指定字符串出现的次数并替换</title>
+      <link>https://lgaying.github.io/utaidu/2019/03/python%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6%E4%B8%AD%E6%8C%87%E5%AE%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0%E5%B9%B6%E6%9B%BF%E6%8D%A2/</link>
+      <pubDate>Sun, 03 Mar 2019 19:01:25 +0800</pubDate>
+      
+      <guid>https://lgaying.github.io/utaidu/2019/03/python%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6%E4%B8%AD%E6%8C%87%E5%AE%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0%E5%B9%B6%E6%9B%BF%E6%8D%A2/</guid>
+      <description>&lt;h3 id=&#34;作业要求&#34;&gt;作业要求：&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;查找“hello”在这个文件中出现的次数。&lt;/li&gt;
+&lt;li&gt;查找并替换，把“hello”替换为“act”。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;文件(a.txt)内容如下：&lt;/p&gt;
+
+&lt;p&gt;hello world&lt;/p&gt;
+
+&lt;p&gt;hello hello world&lt;/p&gt;
+
+&lt;p&gt;hello world&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h5 id=&#34;查找-hello-在这个文件中出现的次数&#34;&gt;查找“hello”在这个文件中出现的次数&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;“”“
+查找原理：
+    1、open打开文件
+    2、读取文件内容，生成一个列表,并将列表转换成字符串
+    3、统计字符串中“hello”出现的次数
+”“”
+i = open(&amp;quot;a.txt&amp;quot;)
+t = &amp;quot; &amp;quot;.join(i.readlines())
+print(&amp;quot;hello出现的次数是：&amp;quot;,t.count(&amp;quot;hello&amp;quot;)
+
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
