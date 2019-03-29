@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>String on 一个有态度的Blog</title>
-    <link>https://www.utaidu.club/tags/string/</link>
+    <link>https://utaidu.club/tags/string/</link>
     <description>Recent content in String on 一个有态度的Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 06 Mar 2019 20:08:25 +0800</lastBuildDate>
     
-	<atom:link href="https://www.utaidu.club/tags/string/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://utaidu.club/tags/string/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Python3_string模块的方法详解</title>
-      <link>https://www.utaidu.club/2019/03/python3_string%E6%A8%A1%E5%9D%97%E7%9A%84%E6%96%B9%E6%B3%95%E8%AF%A6%E8%A7%A3/</link>
+      <link>https://utaidu.club/2019/03/python3_string%E6%A8%A1%E5%9D%97%E7%9A%84%E6%96%B9%E6%B3%95%E8%AF%A6%E8%A7%A3/</link>
       <pubDate>Wed, 06 Mar 2019 20:08:25 +0800</pubDate>
       
-      <guid>https://www.utaidu.club/2019/03/python3_string%E6%A8%A1%E5%9D%97%E7%9A%84%E6%96%B9%E6%B3%95%E8%AF%A6%E8%A7%A3/</guid>
+      <guid>https://utaidu.club/2019/03/python3_string%E6%A8%A1%E5%9D%97%E7%9A%84%E6%96%B9%E6%B3%95%E8%AF%A6%E8%A7%A3/</guid>
       <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;string()&lt;/strong&gt; &lt;strong&gt;模块主要用于对字符串进行操作。&lt;/strong&gt;。&lt;/p&gt;

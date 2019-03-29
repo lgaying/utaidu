@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 一个有态度的Blog</title>
-    <link>https://www.utaidu.club/categories/</link>
+    <link>https://utaidu.club/categories/</link>
     <description>Recent content in Categories on 一个有态度的Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 28 Mar 2019 11:18:29 +0800</lastBuildDate>
     
-	<atom:link href="https://www.utaidu.club/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://utaidu.club/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Book</title>
-      <link>https://www.utaidu.club/categories/book/</link>
+      <link>https://utaidu.club/categories/book/</link>
       <pubDate>Thu, 28 Mar 2019 11:18:29 +0800</pubDate>
       
-      <guid>https://www.utaidu.club/categories/book/</guid>
+      <guid>https://utaidu.club/categories/book/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python学习笔记</title>
-      <link>https://www.utaidu.club/categories/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <link>https://utaidu.club/categories/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Wed, 06 Mar 2019 20:08:25 +0800</pubDate>
       
-      <guid>https://www.utaidu.club/categories/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <guid>https://utaidu.club/categories/python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
       <description></description>
     </item>
     
     <item>
       <title>有用功</title>
-      <link>https://www.utaidu.club/categories/%E6%9C%89%E7%94%A8%E5%8A%9F/</link>
+      <link>https://utaidu.club/categories/%E6%9C%89%E7%94%A8%E5%8A%9F/</link>
       <pubDate>Mon, 11 Mar 2019 18:51:38 +0800</pubDate>
       
-      <guid>https://www.utaidu.club/categories/%E6%9C%89%E7%94%A8%E5%8A%9F/</guid>
+      <guid>https://utaidu.club/categories/%E6%9C%89%E7%94%A8%E5%8A%9F/</guid>
       <description></description>
     </item>
     
