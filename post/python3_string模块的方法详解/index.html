@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>Python3_string模块的方法详解 - 一个有态度的Blog</title>
+    
+    <meta name="description" content="描述
+
+string() 模块主要用于对字符串进行操作。。
+
+
+
+实例
+
+以下展示了使用 string() 方法的实例：
+
+str.capitalize()　&ndash;&gt; String　　　返回字符串，其首字母大写，其余部分小写
+
+1&gt;&gt;&gt; str = &quot;TEST&quot;
+2&gt;&gt;&gt; str1= &quot;test&quot;
+3&gt;&gt;&gt; print(str &#43; &quot;--&gt;&quot; &#43; str.capitalize() &#43;&#39;\n&#39; &#43; &quot;--&gt;&quot; &#43; str &#43; str1.capitalize()) 
+4 TEST--&gt;Test
+5 TEST--&gt;Test
+">
+    <meta name="author" content="Mr.LG">
+    
+    <link href="https://utaidu.club/css/github-gist.min.css" rel="stylesheet">
+    <link href="https://utaidu.club/css/style.css" rel="stylesheet">
+    
+    <link rel="apple-touch-icon" href="https://utaidu.club/img/apple-touch-icon.png">
+    <link rel="icon" href="https://utaidu.club/img/favicon.ico">
+    
+    <meta name="generator" content="Hugo 0.54.0" />
+    
+    <link rel="alternate" type="application/atom+xml" href="https://utaidu.club/index.xml" title="一个有态度的Blog">
+    
+    
+  </head>
+  <body class="single">
+    <header class="header">
+      <div class="wrap">
+        
+        <p class="logo"><a href="https://utaidu.club/">一个有态度的Blog </a></p>
+        
+        <button class="menu-toggle" type="button"></button>
+      </div>
+    </header>
+    <nav class="nav">
+    <ul class="menu">
+      
+      
+    </ul>
+    </nav>
+    <main class="main">
+
+
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">Python3_string模块的方法详解</h1>
+    <div class="post-meta">Mr.LG · 2019.3.6</div>
+  </header>
+  <div class="post-content"><h2 id="描述">描述</h2>
+
+<p><strong>string()</strong> <strong>模块主要用于对字符串进行操作。</strong>。</p>
+
+<hr />
+
+<h2 id="实例">实例</h2>
+
+<p>以下展示了使用 string() 方法的实例：</p>
+
+<p>str.<strong>capitalize()　&ndash;&gt; String　　　返回字符串，其首字母大写，其余部分小写</strong></p>
+
+<pre><code class="language-python">1&gt;&gt;&gt; str = &quot;TEST&quot;
+2&gt;&gt;&gt; str1= &quot;test&quot;
+3&gt;&gt;&gt; print(str + &quot;--&gt;&quot; + str.capitalize() +'\n' + &quot;--&gt;&quot; + str + str1.capitalize()) 
+4 TEST--&gt;Test
+5 TEST--&gt;Test
+</code></pre>
+
+<p>str.`<strong>casefold()　&ndash;&gt; String　　　字符串转换成小写，用于不区分大小写的字符串比较</strong></p>
+
+<pre><code class="language-python">1&gt;&gt;&gt; str = &quot;TESTtest&quot;
+2&gt;&gt;&gt; print(str.casefold())
+3 testtest
+</code></pre>
+
+<p><code>str.</code><strong>center(width[, fillchar])　&ndash;&gt;String　　　指定长度(此处是长度并不是索引值)填充字符</strong></p>
+
+<pre><code class="language-python">1&gt;&gt;&gt; str = &quot;Python&quot;
+2&gt;&gt;&gt; print(str.center(7,'t'))
+3&gt;&gt;&gt; print(str.center(8,'8'))
+4&gt;&gt;&gt; print(str.center(9,'9'))
+5&gt;&gt;&gt; print(str.center(10,'X'))#
+6 tPython
+7 8Python8
+8 99Python9
+9 XXPythonXX
+</code></pre>
+
+<p><code>str.</code><strong>count</strong><strong>(sub</strong><strong>[, start</strong><strong>[, end</strong><strong>]</strong><strong>]</strong><strong>)　&ndash;&gt; int</strong> 　　　　<strong>查找某字符串(sub)出现的次数　，也可以查找在某个位置范围 [2,6] 内出现子字符串的次数</strong>　</p>
+
+<pre><code class="language-python">1 &gt;&gt;&gt;str = &quot;Pythont&quot;
+2 &gt;&gt;&gt;sub = &quot;t&quot;
+3 &gt;&gt;&gt;print(str.count(sub))#查找‘t’在“Pythont”中出现的次数
+4 2
+5 &gt;&gt;&gt;print(str.count(sub,2,6))#在[2,6]范围 内出现的次数
+6 1
+</code></pre>
+
+<p><code>str.</code><strong>encode</strong><strong>(encoding=&ldquo;utf-8&rdquo;, errors=&ldquo;strict&rdquo;</strong><strong>) &ndash;&gt; Object</strong>　　　　<strong>以指定的编码格式解码字符串。默认编码为字符串编码（适合python2中处理中文）</strong></p>
+
+<pre><code class="language-python">1&gt;&gt;&gt; str = &quot;中文&quot;
+2&gt;&gt;&gt; sub = &quot;test&quot;
+3&gt;&gt;&gt; print(str.encode(encoding='utf_8', errors='strict'))
+4 b'\xe4\xb8\xad\xe6\x96\x87'
+5&gt;&gt;&gt; print(sub.encode(encoding='utf_8', errors='strict'))
+6 b'test'
+</code></pre>
+
+<p><code>str**.**</code><strong>endswith</strong><strong>(suffix</strong><strong>[, start</strong><strong>[, end</strong><strong>]</strong><strong>]</strong><strong>)  &ndash;&gt; Bool(True</strong> or <strong>False)</strong>　　　　<strong>用于判断字符串是否以指定后缀结尾，如果以指定后缀结尾返回True，否则返回False。</strong></p>
+
+<p><strong>可选参数&rdquo;start&rdquo;与&rdquo;end&rdquo;为检索字符串的开始与结束位置</strong></p>
+
+<pre><code class="language-python">1&gt;&gt;&gt; str = &quot;TestPython&quot;
+2&gt;&gt;&gt; sub = &quot;test&quot;
+3&gt;&gt;&gt; print(str.endswith('on'))# 判断该字符串以指定后缀‘on’结尾
+4 True
+5&gt;&gt;&gt; print(str.endswith(&quot;t&quot;,4,7))#判断4位置以‘t’开始，7位置以‘t’结尾
+6 True
+7&gt;&gt;&gt; print(str.endswith(&quot;t&quot;,4,9))
+8 False
+</code></pre>
+
+<p><code>str.</code><strong>expandtabs</strong><strong>(tabsize=8</strong><strong>) &ndash;&gt; String</strong>　　　　<strong>将字符串中的tab符号(&rsquo;\t&rsquo;)转换为空格，默认的空格数是8；tabsize &ndash; 指定转换字符串中的 tab 符号(&rsquo;\t&rsquo;)转为空格的字符数。</strong></p>
+
+<pre><code class="language-python">1 &gt;&gt;&gt; '01\t012\t0123\t01234'.expandtabs()
+2 '01      012     0123    01234'
+3 &gt;&gt;&gt; '01\t012\t0123\t01234'.expandtabs(4)
+4 '01  012 0123    01234'
+</code></pre>
+
+<p><code>str.</code><strong>find</strong><strong>(sub</strong><strong>[, start</strong><strong>[, end</strong><strong>]</strong><strong>]</strong><strong>) &ndash;&gt; int</strong>　　　<strong>检测字符串中是否包含子字符串，如果指定 beg（开始）和 end（结束）范围，则检查是否包含在指定范围内，如果包含子字符串，则返回开始的索引值(下标，从0开始)，否则返回-1。 str.rfind(sub[, start[, end]]) &ndash;&gt; int　       返回字符串最后一次出现的位置，如果没有匹配项则返回-1。</strong></p>
+
+<pre><code class="language-python">1 &gt;&gt;&gt; str = &quot;TestPython&quot;
+2 &gt;&gt;&gt; sub = &quot;Test&quot;
+3 &gt;&gt;&gt; print(str.find(sub))#检测是否包含子字符串sub,如果包含则返回开始的索引值，否则返回-1
+4 0
+5 &gt;&gt;&gt; print(str.find('P'))
+6 4
+7 &gt;&gt;&gt; print(str.find('A'))
+8 -1
+</code></pre>
+
+<p>s = &lsquo;lilin is good li lao ban&rsquo;</p>
+
+<p>s.rfind(&lsquo;li&rsquo;)
+　　14</p>
+
+<p>s.rfind(&lsquo;li&rsquo;,0,8)
+　　2</p>
+
+<p>注意：只有当你知道子字符串的位置时才是用<strong>find()</strong>方法。如果你需要检测子字符串是否包含，请至少用 <strong>in</strong> 运算符：</p>
+
+<pre><code class="language-python">1 &gt;&gt;&gt; 'Py' in 'Python'
+2 True
+</code></pre>
+
+<p><code>str.</code><strong>format</strong>**(*args, <strong>kwargs</strong><strong>) &ndash;&gt; String</strong> 　　　　<strong>格式换字符串输出（方法与%相似，但可以指定顺序） 仔细阅读下面的例子</strong></p>
+
+<pre><code class="language-python">1 &gt;&gt;&gt; str = &quot;programmer&quot;
+2 &gt;&gt;&gt; sub = &quot;Python&quot;
+3 &gt;&gt;&gt; print('I am a {}, and learn {}'.format(str,sub))
+4 I am a programmer, and learn Python
+5 &gt;&gt;&gt; print('I am a {1}, and learn {0}'.format(str,sub))
+6 I am a Python, and learn programmer
+7 &gt;&gt;&gt; print('I am a {name}, and learn {tool}'.format(name = str,tool = sub))
+8 I am a programmer, and learn Python
+</code></pre>
+
+<p><code>str.</code><strong>format_map(mapping)  &ndash;&gt; String 　　　　执行字符串格式化操作，替换字段使用{}分隔，同str.format(**mapping), 除了直接使用mapping，而不复制到一个dict</strong></p>
+
+<pre><code class="language-python">1 &gt;&gt;&gt; name = &quot;Peter&quot;
+2 &gt;&gt;&gt; country = &quot;China&quot;
+3 &gt;&gt;&gt; print('I\'m {name} and bron in {country}.'.format_map(vars()))
+4 I'm Peter and bron in China.
+5 
+6 &gt;&gt;&gt; str = &quot;programmer&quot;
+7 &gt;&gt;&gt; sub = &quot;Python&quot;
+8 &gt;&gt;&gt; print('I am a {str}, and learnning {sub}.'.format_map(vars()))
+9 I am a programmer, and learn Python.
+</code></pre>
+
+<p>注： 此方法 出于 Python 3.2 之后</p>
+
+<p><code>str.</code><strong>index</strong><strong>(sub</strong><strong>[, start</strong><strong>[, end</strong><strong>]</strong><strong>]</strong><strong>) &ndash;&gt; int</strong> 　　　　<strong>检测字符串string中是否包含子字符串 sub，如果存在，则返回sub在string中的索引值(下标)，如果指定began（开始）和 end（结束）范围，则检查是否包含在指定范围内，该方法与 python find()方法一样，只不过如果str不在 string中会报一个异常</strong>(ValueError: substring not found)。</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; str = &quot;programmer&quot;
+&gt;&gt;&gt; print(str.index('m'))
+6
+&gt;&gt;&gt; print(str.index('m',6,9))
+6
+&gt;&gt;&gt; print(str.index('m',7,9))
+7
+</code></pre>
+
+<h1 id="字符串条件判断">字符串条件判断：</h1>
+
+<p><code>str**.**</code><strong>isalnum() &ndash;&gt; Bool (True or False)　　　　判断字符串String是否由字符串或数字组成，并且至少有一个字符（不为空）简而言之：只要 c.isalpha(), c.isdecimal(), c.isdigit(), c.isnumeric() 中任意一个为真，则 c.isalnum() 为真。</strong></p>
+
+<pre><code class="language-python">'dobi'.isalnum()
+# True
+'dobi123'.isalnum()
+# True
+'123'.isalnum()
+# True
+'张'.isalnum()
+# True
+'dobi_123'.isalnum()
+# False
+'dobi 123'.isalnum()
+# False
+'%'.isalnum()
+# False
+</code></pre>
+
+<p><code>str.</code><strong>isalpha</strong><strong>(</strong><strong>) &ndash;&gt;Bool (True or False)</strong> 　　　　判断字符串String是否只由字母组成，并且至少有一个字符（不为空）</p>
+
+<pre><code class="language-python">'dobi'.isalpha()
+# True
+'do bi'.isalpha()
+# False
+'dobi123'.isalpha()
+# False
+'张'.isalpha()
+# True
+</code></pre>
+
+<p><strong>str.isdecimal()小数; str.isdigit()数字; str.isnumeric()数值 &ndash;&gt;Bool (True or False) 　　　　判断字符串String是否只由小数/数字/数值组成，并且至少有一个字符（不为空）</strong>
+<strong>三个方法的区别在于对 Unicode 通用标识的真值判断范围不同：</strong>
+<code>isdecimal</code>: Nd,   (小数)  all decimals are digits, but not all digits are decimals(所有小数都是数字，但不是全部数字都是小数)
+<code>isdigit</code>: No, Nd,  (数字)
+<code>isnumeric</code>: No, Nd, Nl  (数值)
+<code>digit</code> 与 <code>decimal</code> 的区别在于有些数值字符串，是 <code>digit</code> 却非 <code>decimal</code></p>
+
+<pre><code class="language-python">num = '\u2155'
+print(num)
+# ⅕
+num.isdecimal(), num.isdigit(), num.isnumeric()
+# (False, False, True)
+num = '\u00B2'
+print(num)
+# ²
+num.isdecimal(), num.isdigit(), num.isnumeric()
+# (False, True, True)
+num = &quot;1&quot;  #unicode
+num.isdecimal(), num.isdigit(), num.isnumeric()
+# (Ture, True, True)
+num = &quot;'Ⅶ'&quot; 
+num.isdecimal(), num.isdigit(), num.isnumeric()
+# (False, False, True)
+num = &quot;十&quot;
+num.isdecimal(), num.isdigit(), num.isnumeric()
+# (False, False, True)
+num = b&quot;1&quot; # byte
+num.isdigit()   # True
+num.isdecimal() # AttributeError 'bytes' object has no attribute 'isdecimal'
+num.isnumeric() # AttributeError 'bytes' object has no attribute 'isnumeric'
+</code></pre>
+
+<h4 id="str-isidentifier-bool-true-or-false-判断字符串中是否是有效标识符"><code>str.</code><code>isidentifier</code>() &ndash;&gt;Bool (True or False)　　　　判断字符串中是否是有效标识符</h4>
+
+<pre><code class="language-python">'def'.isidentifier()
+# True
+'with'.isidentifier()
+# True
+'false'.isidentifier()
+# True
+'dobi_123'.isidentifier()
+# True
+'dobi 123'.isidentifier()
+# False
+'123'.isidentifier()
+# False
+</code></pre>
+
+<p><strong>str.islower()</strong> <strong>&ndash;&gt;Bool (True or False)　　　　判断字符串中是否是有效标识符</strong></p>
+
+<pre><code class="language-python">str = &quot;programmer&quot;
+sub = &quot;PYTHON&quot;
+print(str.islower())
+# True
+print(sub.islower())
+# False
+'ß'.islower()   #德语大写字母
+# False
+</code></pre>
+
+<p><strong>str.isprintable() &ndash;&gt;Bool (True or False)　　　　判断字符串的所有字符都是可打印字符或字符串为空。Unicode 字符集中 “Other” “Separator” 类别的字符为不可打印的字符（但不包括 ASCII 的空格（0x20））。</strong></p>
+
+<pre><code class="language-python">'dobi123'.isprintable()
+# True
+'dobi123\n'.isprintable()
+Out[24]: False
+'dobi 123'.isprintable()
+# True
+'dobi.123'.isprintable()
+# True
+''.isprintable()
+# True
+</code></pre>
+
+<p><code>str**.**</code><strong>isspace</strong><strong>(</strong><strong>)  &ndash;&gt;Bool (True or False)</strong>　　　　<strong>检测字符串是否只由空格组成，并且至少有一个字符（判断字符串中是否至少有一个字符，并且所有字符都是空白字符。）</strong></p>
+
+<pre><code class="language-python">'\r\n\t'.isspace()
+#True
+''.isspace()
+#False
+' '.isspace()
+#True
+</code></pre>
+
+<p><code>str**.**</code><strong>istitle</strong><strong>(</strong><strong>)</strong> <strong>&ndash;&gt;Bool (True or False)</strong>　　　　 <strong>判断字符串中的字符是否是首字母大写，且其他字母为小写,其会忽视非字母字符</strong></p>
+
+<pre><code class="language-python">'How Python Works'.istitle()
+# True
+'How Python WORKS'.istitle()
+# False
+'how python works'.istitle()
+# False
+'How Python  Works'.istitle()
+# True
+' '.istitle()
+# False
+''.istitle()
+# False
+'A'.istitle()
+# True
+'a'.istitle()
+# False
+'甩甩Abc Def 123'.istitle()
+# True
+</code></pre>
+
+<p><code>str**.**</code><strong>isupper</strong><strong>(</strong><strong>)</strong>  <strong>&ndash;&gt;Bool (True or False)　　　　检测字符串中所有的字母是否都为大写</strong></p>
+
+<pre><code class="language-python">'张'.isupper()
+# False
+'DOBI'.isupper()
+Out[41]: True
+'Dobi'.isupper()
+# False
+'DOBI123'.isupper()
+# True
+'DOBI 123'.isupper()
+# True
+'DOBI\t 123'.isupper()
+# True
+'DOBI_123'.isupper()
+# True
+'_123'.isupper()
+# False
+</code></pre>
+
+<h2 id="字符串的联合与分割">字符串的联合与分割:</h2>
+
+<h3 id="str-join-iterable-string-用指定的字符串-连接元素为字符串的可迭代对象">str.join(iterable)       &ndash;&gt; String 　　　　用指定的字符串，连接元素为字符串的可迭代对象。</h3>
+
+<pre><code class="language-python">'-'.join(['2012', '3', '12'])
+# '2012-3-12'
+'-'.join([2012, 3, 12])
+# TypeError: sequence item 0: expected str instance, int found
+'-'.join(['2012', '3', b'12'])  #bytes 为非字符串
+# TypeError: sequence item 2: expected str instance, bytes found
+'-'.join(['2012'])
+# '2012'
+'-'.join([])
+# ''
+'-'.join([None])
+# TypeError: sequence item 0: expected str instance, NoneType found
+'-'.join([''])
+# ''
+','.join({'dobi':'dog', 'polly':'bird'})
+# 'dobi,polly'
+','.join({'dobi':'dog', 'polly':'bird'}.values())
+# 'dog,bird'
+</code></pre>
+
+<h3 id="str-ljust-width-fillchar-str-rjust-width-fillchar">str.ljust(width[, fillchar]);  str.rjust(width[, fillchar])</h3>
+
+<p><strong>返回指定长度的字符串，字符串内容居左（右）如果长度小于字符串长度，则返回原始字符串，默认填充为 ASCII 空格，可指定填充的字符串。</strong></p>
+
+<p>width &ndash; 指定填充指定字符后新字符串的总长度.</p>
+
+<p>fillchar– 要填充的字符，默认为空格。</p>
+
+<pre><code class="language-python">print('dobi'.ljust(10))
+# 'dobi      '
+print('dobi'.ljust(10, '*'))
+# 'dobi~~~~~~'
+print('dobi'.ljust(3, '~'))
+# 'dobi'
+print('dobi'.ljust(3))
+# 'dobi'
+print('dobi'.rjust(10))
+#'      dobi'
+print('dobi'.rjust(10,'@'))
+#'@@@@@@dobi'
+print('dobi'.rjust(3,'@'))
+#'dobi'
+print('dobi'.rjust(3))
+#'dobi'
+</code></pre>
+
+<p><code>str.</code><strong>lower() &ndash;&gt;String</strong> 　　　　<strong>字符串转换成小写    其仅对 ASCII 编码的字母有效。</strong></p>
+
+<pre><code class="language-python">print('PYTHON'.lower())
+#'python'
+print('Python'.lower())
+#'python'
+print('ß'.lower()) # 'ß' 为德语小写字母，其有另一种小写 'ss'， lower 方法无法转换
+#'ß'
+print('张PYTHON'.lower())
+#'张python'
+</code></pre>
+
+<h3 id="str-lstrip-chars-str-rstrip-chars-str-strip-chars-string-or-unicode">str.lstrip([chars]);    str.rstrip([chars]);    str.strip([chars])   &ndash;&gt;  string or unicode</h3>
+
+<h4 id="去掉-删除-字符串后面-前面-两边-的空格-默认是空格-或参数中的字符">去掉(删除)字符串后面 / 前面/ 两边 的空格(默认是空格)，或参数中的字符</h4>
+
+<pre><code class="language-python">print('   Python   '.lstrip())
+#'Python   '
+print('Test Python lstrip'.lstrip('Test'))#去掉前面的参数中的字符'Test'
+#' Python lstrip'
+print('   Python   '.rstrip())
+#'   Python'
+print('   Python   '.strip())
+#'Python'
+</code></pre>
+
+<p><strong>static str.maketrans(x[, y[, z]])    str.translate(table)</strong></p>
+
+<p><strong>maktrans 是一个静态方法，用于生成一个对照表，以供 translate 使用。</strong>
+<strong>如果 maktrans 仅一个参数，则该参数必须是一个字典，字典的 key 要么是一个 Unicode 编码（一个整数），要么是一个长度为 1 的字符串，字典的 value 则可以是任意字符串、None或者 Unicode 编码。</strong></p>
+
+<p><strong>如果 maktrans 有两个参数，则两个参数形成映射，且两个字符串必须是长度相等；如果有第三个参数，则第三个参数也必须是字符串，该字符串将自动映射到 None：</strong></p>
+
+<pre><code class="language-python">a = 'dobi is a dog'
+table = str.maketrans('dobi', 'alph')
+a.translate(table)
+# 'alph hs a alg'
+table = str.maketrans('dobi', 'alph', 'o')
+a.translate(table)
+# 'aph hs a ag'
+</code></pre>
+
+<p>看一个简单的例子来说明字符串转换的过程：
+    2.X下的演示过程：</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; import string                     #导入string模块
+&gt;&gt;&gt; map = string.maketrans('123', 'abc') #建立映射表，将字符串中含有的'1','2','3'替换为'a','b','c'
+&gt;&gt;&gt; s = '54321123789'                #转换前的字符串
+&gt;&gt;&gt; s.translate(map)                  #用创建的映射表map转换字符串
+'54cbaabc789'                        #转换后的字符串
+</code></pre>
+
+<p>​    3.X下的演示过程：</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; map = str.maketrans('123','abc')
+&gt;&gt;&gt; s = '54321123789'
+&gt;&gt;&gt; s.translate(map)
+'54cbaabc789'
+</code></pre>
+
+<p>2.X使用了string的maketrans函数，而3.X使用了str的maketrans函数，除了这一点，使用方法是基本相同的。若指定字符串中要删除的字符时，使用就会略有不同，如下：
+    2.X下的演示过程：</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; import string
+&gt;&gt;&gt; map = string.maketrans('123', 'abc')
+&gt;&gt;&gt; s = '54321123789'
+&gt;&gt;&gt; s.translate(map, '78')        #除了转换，还要删除字符串中的字符'7','8'
+'54cbaabc9'               #转换后的字符串没有字符'7','8'
+</code></pre>
+
+<p>​    3.X下的演示过程：</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; map = str.maketrans('123','abc', '78')#要删除的字符需要在这指定
+&gt;&gt;&gt; s = '54321123789'
+&gt;&gt;&gt; s.translate(map)
+'54cbaabc9'
+</code></pre>
+
+<p><strong>str.partition</strong><strong>(sep</strong><strong>) &ndash;&gt; (head, sep, tail) 　　　　根据指定的分隔符将字符串进行分割（返回一个3元的元组，第一个为分隔符左边的子串，第二个为分隔符本身，第三个为分隔符右边的子串）注：str.partition(sep) 是从前往后查找 (从左往右)　　str.rpartition(sep)  是从后面开始查找 (从右往左)</strong></p>
+
+<pre><code class="language-python">str = 'learn Python is so easy'
+print(str.partition('is'))
+#('learn Python ', 'is', ' so easy')
+print(str.partition('ii'))
+#('learn Python is so easy', '', '')#如果字符串中没有'ii',将返回整个字符串作为第一个，分割的本身以及尾部为空
+print(str.partition('learn'))
+#('', 'learn', ' Python is so easy')
+print(str.partition('easy'))
+#('learn Python is so ', 'easy', '')
+</code></pre>
+
+<h3 id="与-find-rfind-类似-不同的是如果找不到-就会引发-valueerror-str-index-sub-start-end-string-把字符串中的-old-旧字符串-替换成-new-新字符串-如果指定第三个参数max-则替换不超过-max-次-str-rindex-sub-start-end-string-返回子字符串-str-在字符串中最后出现的位置-如果没有匹配的字符串会报异常-你可以指定可选参数-beg-end-设置查找的区间">与 <code>find()</code> <code>rfind()</code> 类似，不同的是如果找不到，就会引发 <code>ValueError</code>。 str.index(sub[, start[, end]]); &ndash;&gt; String　　       <strong>把字符串中的 old（旧字符串）替换成 new(新字符串)，如果指定第三个参数max，则替换不超过 max 次。</strong>str.rindex(sub[, start[, end]]) &ndash;&gt; String　　　　<strong>返回子字符串 str 在字符串中最后出现的位置，如果没有匹配的字符串会报异常，你可以指定可选参数[beg:end]设置查找的区间。</strong></h3>
+
+<pre><code class="language-python">str = 'this is replace old old old text'
+print(str.replace('old', 'new'))
+#this is replace new new new text
+print(str.replace('old', 'new',1))#指定只替换几个
+#this is replace new old old text
+print(str.replace('old', 'new',2))
+#this is replace new new old text
+</code></pre>
+
+<pre><code class="language-python">print(str.rindex('old',10,20))#查找最后出线的位置(下标)
+#'16'
+print(str.rindex('s',0,7))#
+#'6'
+</code></pre>
+
+<h3 id="str-split-sep-none-maxsplit-1-list-通过指定分隔符对字符串进行切片-如果参数num有指定值-则仅分隔-num-个子字符串-str-rsplit-sep-none-maxsplit-1-从后往前-如果字符串开头-结尾包含空格字符串则以非空格字符串后的第一个空格为分隔符"><strong>str.split(sep=None, maxsplit=-1) &ndash;&gt; list　　　　通过指定分隔符对字符串进行切片，如果参数num有指定值，则仅分隔 num 个子字符串  str.rsplit(sep=None, maxsplit=-1)          从后往前　　　　　　　　　　　　　　　　　　　　　　　　如果字符串开头/结尾包含空格字符串则以非空格字符串后的第一个空格为分隔符</strong></h3>
+
+<pre><code class="language-python">print('1,2,3'.split(','), '1, 2, 3'.rsplit())#split从前往后； rsplit从后往前
+#['1', '2', '3'] ['1,', '2,', '3']
+
+#如果参数num有指定值，则仅分隔 num 个子字符串
+print('1,2,3'.split(',', maxsplit=1),  '1,2,3'.rsplit(',', maxsplit=1))#此处的意思就是仅分隔1次（最多分拆次数）
+#['1', '2,3'] ['1,2', '3']
+
+print('1 2 3'.split(), '1 2 3'.rsplit())#此处是以默认值分隔，默认值为空格
+#['1', '2', '3'] ['1', '2', '3']
+
+print('test test test'.split(maxsplit=1), '1 2 3'.rsplit(maxsplit=1))#此处直接写拆分次数，那么就是默认值（空格）分隔
+#['test', 'test test'] ['1 2', '3']
+
+print('     tttt test test    '.split(), '     tttt test test    '.rsplit())#如果字符串开头/结尾包含空格字符串则以非空格字符串后的第一个空格为分隔符
+#['tttt', 'test', 'test'] ['tttt', 'test', 'test']
+
+print('1,2,,,3,'.split(','), '1,2,,,3,'.rsplit(','))
+#(['1', '2', '', '', '3', ''] ['1', '2', '', '', '3', ''])
+
+print(''.split())
+#[]
+
+print(''.split('a'))
+#['']
+
+print('bcd'.split('a'))
+#['bcd']
+
+print('bcd'.split(None))
+#['bcd']
+</code></pre>
+
+<h3 id="str-splitlines-keepends-list-字符串以换行符为分隔符拆分-去掉行界符-如果keepends为true-保留行界符-能被识别的行界符参照官方文档"><strong>str.splitlines([keepends])  &ndash;&gt; List　　　　字符串以换行符为分隔符拆分，去掉行界符；如果keepends为True，保留行界符，能被识别的行界符参照官方文档</strong></h3>
+
+<pre><code class="language-python">print('HOW\nSOFT\nWORKS'.splitlines())#字符串以换行符为分隔符拆分，去掉换行符；
+#['HOW', 'SOFT', 'WORKS']
+print('HOW\nSOFT\nWORKS'.splitlines(True))#如果keepends为True，保留换行符
+#['HOW\n', 'SOFT\n', 'WORKS']
+
+print(''.splitlines(), ''.split('\n'))#注意两者的区别
+#([] [''])
+print(&quot;One line\n&quot;.splitlines(), &quot;Two line\n&quot;.split('\n'))#注意两者的区别
+#(['One line'] ['Two line', ''])
+</code></pre>
+
+<h3 id="能被识别的行界符"><strong>能被识别的行界符：</strong></h3>
+
+<table>
+<thead>
+<tr>
+<th>Representation</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>\n</strong></td>
+<td><strong>Line Feed   换行</strong></td>
+</tr>
+
+<tr>
+<td><strong>\r</strong></td>
+<td><strong>Carriage Return 回车</strong></td>
+</tr>
+
+<tr>
+<td><strong>\r\n</strong></td>
+<td><strong>Carriage Return + Line Feed  回车+换行</strong></td>
+</tr>
+
+<tr>
+<td><strong>\v or \x0b</strong></td>
+<td><strong>Line Tabulation</strong></td>
+</tr>
+
+<tr>
+<td><strong>\f or \x0c</strong></td>
+<td><strong>Form Feed 换页</strong></td>
+</tr>
+
+<tr>
+<td><strong>\x1c</strong></td>
+<td><strong>File Separator 文件分隔符</strong></td>
+</tr>
+
+<tr>
+<td><strong>\x1d</strong></td>
+<td><strong>Group Separator  组分隔符</strong></td>
+</tr>
+
+<tr>
+<td><strong>\x1e</strong></td>
+<td><strong>Record Separator 记录分隔符号</strong></td>
+</tr>
+
+<tr>
+<td><strong>\x85</strong></td>
+<td><strong>Next Line (C1 Control Code)</strong></td>
+</tr>
+
+<tr>
+<td><strong>\u2028</strong></td>
+<td><strong>Line Separator  行分隔符</strong></td>
+</tr>
+
+<tr>
+<td><strong>\u2029</strong></td>
+<td><strong>Paragraph Separator 段落分隔符号</strong></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="str-startswith-prefix-start-end-bool-true-or-false-用于检查字符串是否是以指定子字符串开头-如果是则返回-true-否则返回-false-如果参数-beg-和-end指定值-则在指定范围内检查"><strong>str.startswith(prefix[, start[, end]]) &ndash;&gt; Bool (true or false)　　　　用于检查字符串是否是以指定子字符串开头，如果是则返回 True，否则返回 False。如果参数 beg 和 end指定值，则在指定范围内检查。</strong></h3>
+
+<pre><code class="language-python">print('Learn python in cnblogs'.startswith('Learn'))
+#True
+print('Learn python in cnblogs'.startswith('test'))
+#False
+print('Learn python in cnblogs'.startswith('python',6,12))
+#True
+print('Learn python in cnblogs'.startswith('python',1,5))
+#False
+</code></pre>
+
+<h3 id="str-swapcase-string-用于对字符串的大小写字母进行反转-小写转大写-大写转小写"><strong>str.swapcase() &ndash; &gt; String   用于对字符串的大小写字母进行反转(小写转大写，大写转小写)</strong></h3>
+
+<pre><code class="language-python">print('张Dobi a123 ß'.swapcase())#这里的 ß 被转成 SS 是一种大写
+#张dOBI A123 SS
+</code></pre>
+
+<p>但需要注意的是 <code>s.swapcase().swapcase() == s</code> 不一定为真：</p>
+
+<pre><code class="language-python">u'\xb5'
+# 'µ'
+u'\xb5'.swapcase()
+# 'Μ'
+u'\xb5'.swapcase().swapcase()
+# 'μ'
+hex(ord(u'\xb5'.swapcase().swapcase()))
+Out[154]: '0x3bc'
+</code></pre>
+
+<p>这里 <code>'Μ'</code>(是 mu 不是 M) 的小写正好与 <code>'μ'</code> 的写法一致。</p>
+
+<p><strong>str.strip([chars]) &ndash;&gt;String  　　　　返回&rdquo;标题化&rdquo;的字符串,就是说所有单词都是以大写开始，其余字母均为小写。</strong></p>
+
+<pre><code class="language-python">print('learn python in cnblogs'.title())
+#Learn Python In Cnblogs
+</code></pre>
+
+<h3 id="str-upper-string-将字符串所有字母变为大写-会自动忽略不可转成大写的字符">str.upper() &ndash;&gt;String　　　　将字符串所有字母变为大写，会自动忽略不可转成大写的字符。</h3>
+
+<pre><code class="language-python">print('学习Python 1 day !!!'.upper())
+#学习PYTHON 1 DAY !!!
+</code></pre>
+
+<h3 id="str-zfill-width-string-用-0-填充字符串-并返回指定宽度的字符串-注-正常一般是从字符串的左边开始填充-如指定长度小于字符串长度则返回原字符串">str.zfill(width) &ndash;&gt; String 　　　　用 &lsquo;0&rsquo; 填充字符串，并返回指定宽度的字符串。 注：正常一般是从字符串的左边开始填充，如指定长度小于字符串长度则返回原字符串</h3>
+
+<pre><code class="language-python">print('A'.zfill(5))
+#0000A
+print('--'.zfill(5))
+#-000-
+print('\'\''.zfill(5))
+#000''
+print('AAAAAAAAAAAA'.zfill(6))
+#AAAAAAAAAAAA
+print('AAAAAAAAAAAA'.zfill(15))
+#000AAAAAAAAAAAA
+</code></pre>
+
+<blockquote>
+<p><strong>感谢<a href="https://www.cnblogs.com/PeterZhang1520389703/p/7647160.html">软测小生</a>的整理</strong></p>
+</blockquote></div>
+  <footer class="post-footer">
+    
+    <ul class="post-tags">
+      
+      <li><a href="https://utaidu.club/tags/string/">string</a></li>
+      
+    </ul>
+    
+  </footer>
+  
+  
+  
+  
+</article>
+
+</main>
+<footer class="footer">
+  <span>&copy; 2019 一个有态度的Blog</span>
+  <span>&middot;</span>
+  <span>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</span>
+  <span>&middot;</span>
+  <span><a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 3.0</a>️</span>
+</footer>
+<script src="https://utaidu.club/js/instantclick.min.js" data-no-instant></script>
+<script data-no-instant>InstantClick.init();</script>
+<script src="https://utaidu.club/js/highlight.min.js" data-no-instant></script>
+<script data-no-instant>
+  hljs.initHighlightingOnLoad();
+  setMenuListener();
+
+  InstantClick.on('change', function() {
+    document.querySelectorAll('pre code').forEach((block) => {
+      hljs.highlightBlock(block);
+    });
+    setMenuListener();
+  });
+
+  function setMenuListener() {
+    var menuToggle = document.querySelector('.menu-toggle');
+    var body = document.querySelector('body');
+    menuToggle.addEventListener('click', function() {
+      body.classList.toggle('no-scroll');
+    }, false);
+  }
+</script>
+</body>
+</html>
+

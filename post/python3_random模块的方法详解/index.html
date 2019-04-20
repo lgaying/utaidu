@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>Python3_random模块的方法详解 - 一个有态度的Blog</title>
+    
+    <meta name="description" content="描述
+
+random() 方法返回随机生成的一个实数，它在(0,1)范围内。
+
+语法
+
+以下是 random() 方法的语法:
+
+import random
+
+random.random()
+
+
+注意：random()是不能直接访问的，需要导入 random 模块，然后通过 random 静态对象调用该方法。
+
+">
+    <meta name="author" content="">
+    
+    <link href="https://utaidu.club/css/github-gist.min.css" rel="stylesheet">
+    <link href="https://utaidu.club/css/style.css" rel="stylesheet">
+    
+    <link rel="apple-touch-icon" href="https://utaidu.club/img/apple-touch-icon.png">
+    <link rel="icon" href="https://utaidu.club/img/favicon.ico">
+    
+    <meta name="generator" content="Hugo 0.54.0" />
+    
+    <link rel="alternate" type="application/atom+xml" href="https://utaidu.club/index.xml" title="一个有态度的Blog">
+    
+    
+  </head>
+  <body class="single">
+    <header class="header">
+      <div class="wrap">
+        
+        <p class="logo"><a href="https://utaidu.club/">一个有态度的Blog </a></p>
+        
+        <button class="menu-toggle" type="button"></button>
+      </div>
+    </header>
+    <nav class="nav">
+    <ul class="menu">
+      
+      
+    </ul>
+    </nav>
+    <main class="main">
+
+
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">Python3_random模块的方法详解</h1>
+    <div class="post-meta">2019.3.5</div>
+  </header>
+  <div class="post-content"><h2 id="描述">描述</h2>
+
+<p><strong>random()</strong> 方法返回随机生成的一个实数，它在(0,1)范围内。</p>
+
+<h2 id="语法">语法</h2>
+
+<p>以下是 random() 方法的语法:</p>
+
+<pre><code>import random
+
+random.random()
+</code></pre>
+
+<p><strong>注意：</strong>random()是不能直接访问的，需要导入 random 模块，然后通过 random 静态对象调用该方法。</p>
+
+<hr />
+
+<h2 id="参数">参数</h2>
+
+<ul>
+<li>无</li>
+</ul>
+
+<hr />
+
+<h2 id="返回值">返回值</h2>
+
+<p>返回随机生成的一个实数，它在(0,1)范围内。</p>
+
+<hr />
+
+<h2 id="实例">实例</h2>
+
+<p>以下展示了使用 random() 方法的实例：</p>
+
+<pre><code class="language-python">print(random.random()) #用于生成一个0到1之间的随机浮点数
+print(random.uniform(1,3))# 用于生成一个指定范围内的随机浮点数
+print(random.uniform(3,1))# 两个参数一个是上限，一个是下限。
+print(random.randint(1,3)) # 用于生成一个指定范围内的整数。
+
+#random.randrange([start],stop[,step]) 从指定范围内，按指定的基数递增的集合中获取一个随机数
+print(random.randrange(0,100,2)) # 取 0到100之间的随机偶数 
+
+# random.choice 从序列中获取一个随机元素。其函数原型为random.choice(sequence)，参数sequence表示
+# 一个有序类型。
+print(random.choice('改变世界')) # 世
+print(random.choice(['sunshine','is','lower'])) #lower
+print(random.choice(('sunshine','always','18')))  # 18 
+
+# random.shuffle(x[,random]) 用于将一个列表中的元素打乱。
+ s = ['改','变','世','界']
+random.shuffle(s)
+print(s) # ['变', '世', '改', '界']
+
+# random.sample(sequence,k) 从指令序列中随机获取指定长度的片段。sample函数不会修改原有的序列。
+l = [1,2,3,4,5,6,7,8]
+print(random.sample(l,3)) # [7, 3, 5]
+</code></pre>
+
+<blockquote>
+<h2 id="random-random">random.random</h2>
+
+<p>random.random()用于生成一个0到1的随机符点数: 0 &lt;= n &lt; 1.0</p>
+
+<h2 id="random-uniform">random.uniform</h2>
+
+<p>　　random.uniform的函数原型为：random.uniform(a, b)，用于生成一个指定范围内的随机符点数，两个参数其中一个是上限，一个是下限。如果a &gt; b，则生成的随机数n: a &lt;= n &lt;= b。如果 a &lt;b， 则 b &lt;= n &lt;= a。</p>
+
+<ol>
+<li>print random.uniform(10, 20)<br /></li>
+<li>print random.uniform(20, 10)<br /></li>
+<li>#&mdash;- 结果（不同机器上的结果不一样）<br /></li>
+<li>#18.7356606526<br /></li>
+<li>#12.5798298022<br /></li>
+</ol>
+
+<p>print random.uniform(10, 20) print random.uniform(20, 10) #&mdash;- 结果（不同机器上的结果不一样） #18.7356606526 #12.5798298022</p>
+
+<h2 id="random-randint">random.randint</h2>
+
+<p>　　random.randint()的函数原型为：random.randint(a, b)，用于生成一个指定范围内的整数。其中参数a是下限，参数b是上限，生成的随机数n: a &lt;= n &lt;= b</p>
+
+<ol>
+<li>print random.randint(12, 20)  #生成的随机数n: 12 &lt;= n &lt;= 20<br /></li>
+<li>print random.randint(20, 20)  #结果永远是20<br /></li>
+<li>#print random.randint(20, 10)  #该语句是错误的。下限必须小于上限。<br /></li>
+</ol>
+
+<p>print random.randint(12, 20) #生成的随机数n: 12 &lt;= n &lt;= 20 print random.randint(20, 20) #结果永远是20 #print random.randint(20, 10) #该语句是错误的。下限必须小于上限。</p>
+
+<h2 id="random-randrange">random.randrange</h2>
+
+<p>　　random.randrange的函数原型为：random.randrange([start], stop[, step])，从指定范围内，按指定基数递增的集合中 获取一个随机数。如：random.randrange(10, 100, 2)，结果相当于从[10, 12, 14, 16, &hellip; 96, 98]序列中获取一个随机数。random.randrange(10, 100, 2)在结果上与 random.choice(range(10, 100, 2) 等效。</p>
+
+<h2 id="random-choice">random.choice</h2>
+
+<p>　　random.choice从序列中获取一个随机元素。其函数原型为：random.choice(sequence)。参数sequence表示一个有序类型。这里要<strong>说明</strong> 一下：sequence在python不是一种特定的类型，而是泛指一系列的类型。list, tuple, 字符串都属于sequence。有关sequence可以查看python手册数据模型这一章。下面是使用choice的一些例子：</p>
+
+<ol>
+<li>print random.choice(&ldquo;学习Python&rdquo;)<br /></li>
+<li>print random.choice([&ldquo;JGood&rdquo;, &ldquo;is&rdquo;, &ldquo;a&rdquo;, &ldquo;handsome&rdquo;, &ldquo;boy&rdquo;])<br /></li>
+<li>print random.choice((&ldquo;Tuple&rdquo;, &ldquo;List&rdquo;, &ldquo;Dict&rdquo;))<br /></li>
+</ol>
+
+<p>print random.choice(&ldquo;学习Python&rdquo;) print random.choice([&ldquo;JGood&rdquo;, &ldquo;is&rdquo;, &ldquo;a&rdquo;, &ldquo;handsome&rdquo;, &ldquo;boy&rdquo;]) print random.choice((&ldquo;Tuple&rdquo;, &ldquo;List&rdquo;, &ldquo;Dict&rdquo;))</p>
+
+<h2 id="random-shuffle">random.shuffle</h2>
+
+<p>　　random.shuffle的函数原型为：random.shuffle(x[, random])，用于将一个列表中的元素打乱。如:</p>
+
+<ol>
+<li>p = [&ldquo;Python&rdquo;, &ldquo;is&rdquo;, &ldquo;powerful&rdquo;, &ldquo;simple&rdquo;, &ldquo;and so on&hellip;&rdquo;]<br /></li>
+<li>random.shuffle(p)<br /></li>
+<li>print p<br /></li>
+<li>#&mdash;- 结果（不同机器上的结果可能不一样。）<br /></li>
+<li>#[&lsquo;powerful&rsquo;, &lsquo;simple&rsquo;, &lsquo;is&rsquo;, &lsquo;Python&rsquo;, &lsquo;and so on&hellip;&rsquo;]<br /></li>
+</ol>
+
+<p>p = [&ldquo;Python&rdquo;, &ldquo;is&rdquo;, &ldquo;powerful&rdquo;, &ldquo;simple&rdquo;, &ldquo;and so on&hellip;&rdquo;] random.shuffle(p) print p #&mdash;- 结果（不同机器上的结果可能不一样。） #[&lsquo;powerful&rsquo;, &lsquo;simple&rsquo;, &lsquo;is&rsquo;, &lsquo;Python&rsquo;, &lsquo;and so on&hellip;&rsquo;]</p>
+
+<h2 id="random-sample">random.sample</h2>
+
+<p>　　random.sample的函数原型为：random.sample(sequence, k)，从指定序列中随机获取指定长度的片断。sample函数不会修改原有序列。</p>
+
+<ol>
+<li>list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]<br /></li>
+<li>slice = random.sample(list, 5)  #从list中随机获取5个元素，作为一个片断返回<br /></li>
+<li>print slice<br /></li>
+<li>print list #原有序列并没有改变。<br /></li>
+</ol>
+</blockquote></div>
+  <footer class="post-footer">
+    
+    <ul class="post-tags">
+      
+      <li><a href="https://utaidu.club/tags/python/">Python</a></li>
+      
+      <li><a href="https://utaidu.club/tags/random/">random</a></li>
+      
+    </ul>
+    
+  </footer>
+  
+  
+  
+  
+</article>
+
+</main>
+<footer class="footer">
+  <span>&copy; 2019 一个有态度的Blog</span>
+  <span>&middot;</span>
+  <span>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</span>
+  <span>&middot;</span>
+  <span><a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 3.0</a>️</span>
+</footer>
+<script src="https://utaidu.club/js/instantclick.min.js" data-no-instant></script>
+<script data-no-instant>InstantClick.init();</script>
+<script src="https://utaidu.club/js/highlight.min.js" data-no-instant></script>
+<script data-no-instant>
+  hljs.initHighlightingOnLoad();
+  setMenuListener();
+
+  InstantClick.on('change', function() {
+    document.querySelectorAll('pre code').forEach((block) => {
+      hljs.highlightBlock(block);
+    });
+    setMenuListener();
+  });
+
+  function setMenuListener() {
+    var menuToggle = document.querySelector('.menu-toggle');
+    var body = document.querySelector('body');
+    menuToggle.addEventListener('click', function() {
+      body.classList.toggle('no-scroll');
+    }, false);
+  }
+</script>
+</body>
+</html>
+

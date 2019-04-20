@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>Python查找文件中指定字符串出现的次数并替换 - 一个有态度的Blog</title>
+    
+    <meta name="description" content="作业要求：
+
+
+查找“hello”在这个文件中出现的次数。
+查找并替换，把“hello”替换为“act”。
+
+
+
+
+文件(a.txt)内容如下：
+
+hello world
+
+hello hello world
+
+hello world
+
+
+
+查找“hello”在这个文件中出现的次数
+
+“”“
+查找原理：
+    1、open打开文件
+    2、读取文件内容，生成一个列表,并将列表转换成字符串
+    3、统计字符串中“hello”出现的次数
+”“”
+i = open(&quot;a.txt&quot;)
+t = &quot; &quot;.join(i.readlines())
+print(&quot;hello出现的次数是：&quot;,t.count(&quot;hello&quot;)
+
+">
+    <meta name="author" content="Mr.LG">
+    
+    <link href="https://utaidu.club/css/github-gist.min.css" rel="stylesheet">
+    <link href="https://utaidu.club/css/style.css" rel="stylesheet">
+    
+    <link rel="apple-touch-icon" href="https://utaidu.club/img/apple-touch-icon.png">
+    <link rel="icon" href="https://utaidu.club/img/favicon.ico">
+    
+    <meta name="generator" content="Hugo 0.54.0" />
+    
+    <link rel="alternate" type="application/atom+xml" href="https://utaidu.club/index.xml" title="一个有态度的Blog">
+    
+    
+  </head>
+  <body class="single">
+    <header class="header">
+      <div class="wrap">
+        
+        <p class="logo"><a href="https://utaidu.club/">一个有态度的Blog </a></p>
+        
+        <button class="menu-toggle" type="button"></button>
+      </div>
+    </header>
+    <nav class="nav">
+    <ul class="menu">
+      
+      
+    </ul>
+    </nav>
+    <main class="main">
+
+
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">Python查找文件中指定字符串出现的次数并替换</h1>
+    <div class="post-meta">Mr.LG · 2019.3.3</div>
+  </header>
+  <div class="post-content"><h3 id="作业要求">作业要求：</h3>
+
+<ol>
+<li>查找“hello”在这个文件中出现的次数。</li>
+<li>查找并替换，把“hello”替换为“act”。</li>
+</ol>
+
+<hr />
+
+<p>文件(a.txt)内容如下：</p>
+
+<p>hello world</p>
+
+<p>hello hello world</p>
+
+<p>hello world</p>
+
+<hr />
+
+<h5 id="查找-hello-在这个文件中出现的次数">查找“hello”在这个文件中出现的次数</h5>
+
+<pre><code class="language-python">“”“
+查找原理：
+    1、open打开文件
+    2、读取文件内容，生成一个列表,并将列表转换成字符串
+    3、统计字符串中“hello”出现的次数
+”“”
+i = open(&quot;a.txt&quot;)
+t = &quot; &quot;.join(i.readlines())
+print(&quot;hello出现的次数是：&quot;,t.count(&quot;hello&quot;)
+
+</code></pre>
+
+<p>查找并替换，把“hello”替换为“act”</p>
+
+<pre><code class="language-python">“”“
+替换原理：
+   1、open打开文件 采用r+模式
+   2、读取文件内容
+   3、将文件读写指针移位到文件开始位置 seek(0,0)
+   4、遍历文件内容，并替换指定指定字符串
+   5、重新写入文件
+”“”
+i = open(&quot;a.txt&quot;,&quot;r+&quot;)
+info = i.readlins()
+i.seek(0,0)
+for t in info:
+    t_new = t.replace(&quot;hello&quot;,&quot;act&quot;)
+    i.write(t_new)
+ i.close()
+</code></pre></div>
+  <footer class="post-footer">
+    
+    <ul class="post-tags">
+      
+      <li><a href="https://utaidu.club/tags/python/">Python</a></li>
+      
+    </ul>
+    
+  </footer>
+  
+  
+  
+  
+</article>
+
+</main>
+<footer class="footer">
+  <span>&copy; 2019 一个有态度的Blog</span>
+  <span>&middot;</span>
+  <span>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</span>
+  <span>&middot;</span>
+  <span><a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 3.0</a>️</span>
+</footer>
+<script src="https://utaidu.club/js/instantclick.min.js" data-no-instant></script>
+<script data-no-instant>InstantClick.init();</script>
+<script src="https://utaidu.club/js/highlight.min.js" data-no-instant></script>
+<script data-no-instant>
+  hljs.initHighlightingOnLoad();
+  setMenuListener();
+
+  InstantClick.on('change', function() {
+    document.querySelectorAll('pre code').forEach((block) => {
+      hljs.highlightBlock(block);
+    });
+    setMenuListener();
+  });
+
+  function setMenuListener() {
+    var menuToggle = document.querySelector('.menu-toggle');
+    var body = document.querySelector('body');
+    menuToggle.addEventListener('click', function() {
+      body.classList.toggle('no-scroll');
+    }, false);
+  }
+</script>
+</body>
+</html>
+
