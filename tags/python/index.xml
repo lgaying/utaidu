@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on 一个有态度的Blog</title>
-    <link>https://utaidu.club/tags/python/</link>
+    <link>https://utaidu.work/tags/python/</link>
     <description>Recent content in Python on 一个有态度的Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 05 Mar 2019 19:27:59 +0800</lastBuildDate>
     
-	<atom:link href="https://utaidu.club/tags/python/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://utaidu.work/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Python3_random模块的方法详解</title>
-      <link>https://utaidu.club/2019/03/python3_random%E6%A8%A1%E5%9D%97%E7%9A%84%E6%96%B9%E6%B3%95%E8%AF%A6%E8%A7%A3/</link>
+      <link>https://utaidu.work/2019/03/python3_random%E6%A8%A1%E5%9D%97%E7%9A%84%E6%96%B9%E6%B3%95%E8%AF%A6%E8%A7%A3/</link>
       <pubDate>Tue, 05 Mar 2019 19:27:59 +0800</pubDate>
       
-      <guid>https://utaidu.club/2019/03/python3_random%E6%A8%A1%E5%9D%97%E7%9A%84%E6%96%B9%E6%B3%95%E8%AF%A6%E8%A7%A3/</guid>
+      <guid>https://utaidu.work/2019/03/python3_random%E6%A8%A1%E5%9D%97%E7%9A%84%E6%96%B9%E6%B3%95%E8%AF%A6%E8%A7%A3/</guid>
       <description>&lt;h2 id=&#34;描述&#34;&gt;描述&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;random()&lt;/strong&gt; 方法返回随机生成的一个实数，它在(0,1)范围内。&lt;/p&gt;
@@ -37,10 +37,10 @@ random.random()
     
     <item>
       <title>Python查找文件中指定字符串出现的次数并替换</title>
-      <link>https://utaidu.club/2019/03/python%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6%E4%B8%AD%E6%8C%87%E5%AE%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0%E5%B9%B6%E6%9B%BF%E6%8D%A2/</link>
+      <link>https://utaidu.work/2019/03/python%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6%E4%B8%AD%E6%8C%87%E5%AE%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0%E5%B9%B6%E6%9B%BF%E6%8D%A2/</link>
       <pubDate>Sun, 03 Mar 2019 19:01:25 +0800</pubDate>
       
-      <guid>https://utaidu.club/2019/03/python%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6%E4%B8%AD%E6%8C%87%E5%AE%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0%E5%B9%B6%E6%9B%BF%E6%8D%A2/</guid>
+      <guid>https://utaidu.work/2019/03/python%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6%E4%B8%AD%E6%8C%87%E5%AE%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0%E5%B9%B6%E6%9B%BF%E6%8D%A2/</guid>
       <description>&lt;h3 id=&#34;作业要求&#34;&gt;作业要求：&lt;/h3&gt;
 
 &lt;ol&gt;
